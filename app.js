@@ -18,6 +18,6 @@ setInterval(() => {
 
 }
 
-require('http').createServer((rew , res) => res.end('hw')).listen(process.env.PORT)
+require('http').createServer((rew , res) => res.end('hello world')).listen(process.env.PORT)
 
 
