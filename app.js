@@ -6,11 +6,13 @@ const fn = () => {
  let c = 0
 
 setInterval(() => {
-    var client = new net.Socket();
-    client.connect(80, 'reactjs-chat.herokuapp.com', function() {
-        // console.log('Connected');
-        c++
-    });
+   if(c < 700){
+     var client = new net.Socket();
+     client.connect(80, 'reactjs-chat.herokuapp.com', function() {
+         // console.log('Connected');
+         c++
+     });
+   }
 
     
 
