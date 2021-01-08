@@ -4,15 +4,15 @@ var net = require('net');
 
 const fn = () => {
 
-const ss = []
+untitled:/c%3A/projects/socket-test.py
 setInterval(() => {
     var client = new net.Socket();
-    client.connect(25565, 'beratbadat.aternost.me', function() {
+    client.connect(5000, '85.99.59.123', function() {
         // console.log('Connected');
         client.write('Hello, server! Love, Client.');
     });
 
-    ss.push(client)
+    
 
 })
 
