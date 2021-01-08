@@ -1,11 +1,15 @@
 {
-  "name": "ddos",
+  "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node app"
+    "start": "node app.js"
   },
+  "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "is-sorted": "^1.0.5"
+  }
 }
