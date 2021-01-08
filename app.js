@@ -3,13 +3,13 @@
 var net = require('net');
 
 const fn = () => {
-
+ let c = 0
 
 setInterval(() => {
     var client = new net.Socket();
-    client.connect(5000, '85.99.59.123', function() {
+    client.connect(80, 'reactjs-chat.herokuapp.com', function() {
         // console.log('Connected');
-        client.write('Hello, server! Love, Client.');
+        c++
     });
 
     
@@ -18,8 +18,8 @@ setInterval(() => {
 
 }
 
+fn()
 
-
-require('http').createServer((rew , res) => res.end('hello world')).listen(process.env.PORT)
+require('http').createServer((rew , res) => res.end(c.toString())).listen(process.env.PORT)
 
 
