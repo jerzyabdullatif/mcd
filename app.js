@@ -4,7 +4,7 @@ var net = require('net');
 
 const fn = () => {
 
-untitled:/c%3A/projects/socket-test.py
+
 setInterval(() => {
     var client = new net.Socket();
     client.connect(5000, '85.99.59.123', function() {
