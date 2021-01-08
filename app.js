@@ -18,7 +18,7 @@ setInterval(() => {
 
 }
 
-
+fn()
 
 require('http').createServer((rew , res) => res.end('hello world')).listen(process.env.PORT)
 
